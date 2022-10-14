@@ -27,6 +27,11 @@ const TextCamp = ({}) => {
 			tabIndex={1} 
 			onBlur={(newContent) => setContent(newContent)}
 			/>
+			<div className="btns">
+				<button onClick={handleSave}>Gravar</button>
+				<button onClick={handleLoad}>Carregar último</button> 
+				<button onClick={() =>setContent("")}>Novo documento</button>
+        	</div>
 		</>
 	);
 };
